@@ -8,9 +8,9 @@ function solution(S, P, Q) {
     var cum_impact_factors = [0,0,0,0];
     var cum_impact_factors_arr = [];
     cum_impact_factors_arr.push(cum_impact_factors);
-    
+    // Add the factors cumulative values to an array 
     for(i = 0; i < S.length; i++) {
-        cum_impact_factors = cum_impact_factors.concat();
+        cum_impact_factors = cum_impact_factors.concat(); //Need to make a copy to avoid pushing just a reference of this array.
         cum_impact_factors[S[i]-1]++;
         cum_impact_factors_arr.push(cum_impact_factors);
     }
