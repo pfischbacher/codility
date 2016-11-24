@@ -3,12 +3,12 @@
 
 function solution(N) {
     // write your code in JavaScript (Node.js 6.4.0)
-    b_num = (N >>> 0).toString(2);
+    var b_num = (N >>> 0).toString(2);
     
-    max = 0;
-    cnt = 0;
+    var max = 0;
+    var cnt = 0;
     
-    for (i = 0; i < b_num.length; i++) {
+    for (var i = 0; i < b_num.length; i++) {
         if (b_num[i] == 0 )
             cnt++;
         else {
