@@ -1,7 +1,7 @@
 function solution(A) {
-    result = 1;
-    i = 0;
-    B = [];
+    var result = 1;
+    var i = 0;
+    var B = [];
     
     if (A.length > 0 ) {
         A.sort(function (a, b) {  return a - b;  });
