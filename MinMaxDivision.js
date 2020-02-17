@@ -1,4 +1,6 @@
 function solution(K, M, A) {
+  // M is a red herring, it is misleading!
+  
   let len = A.length;
   let beg = Math.max(...A);
   let end = A.reduce(function(a, b){
